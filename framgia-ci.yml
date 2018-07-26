@@ -5,6 +5,7 @@ build:
     - gem update bundler
     - bundle install
     - framgia-ci run
+services:
 project_type: ruby
 test:
   bundle-audit:
