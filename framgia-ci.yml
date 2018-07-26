@@ -6,6 +6,13 @@ build:
     - bundle install
     - framgia-ci run
 services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: ci_test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: root
 project_type: ruby
 test:
   bundle-audit:
