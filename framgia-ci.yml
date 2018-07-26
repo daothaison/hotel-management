@@ -22,7 +22,7 @@ test:
   rspec:
     enable: true
     ignore: true
-    command: rspec --format html --out .framgia-ci-reports/rspec.html /
+    command: rspec --format html --out .framgia-ci-reports/rspec.html 
   brakeman:
     enable: true
     ignore: true
